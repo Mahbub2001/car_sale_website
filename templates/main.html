@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="hero min-h-screen bg-cover bg-center" style="background-image: url(https://cdn.i-scmp.com/sites/default/files/styles/landscape_250_99/public/d8/images/2019/11/01/1a_bmw_wanchaishowroom_finedata_1.jpg?itok=Yf_XYbkj);">
+    <div class="hero-overlay bg-black bg-opacity-50"></div>
+    <div class="hero-content text-center text-white">
+        <div class="max-w-md mx-auto">
+            <h1 class="mb-5 text-4xl md:text-6xl font-bold tracking-wide">Welcome to Our Showroom</h1>
+            <p class="mb-8 text-lg md:text-xl">Explore our wide range of cars and find your dream ride.</p>
+            <a href="#" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg md:text-xl font-semibold text-white transition duration-300 ease-in-out">Explore Now</a>
+        </div>
+    </div>
+  </div>
+  
+{% include 'filter_part.html' with brands=brands %}
+{% include 'car_list.html' with cars=cars %}
+{% endblock content %}
